@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Card, Row, Col, Input, Button, Divider, notification } from "antd";
+import { Card, Row, Col, Input, Button, Divider, notification,Typography } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
+const { Title } = Typography;
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +35,7 @@ class Login extends Component {
   };
   handleLoginClick = () => {
       if (this.checkValidation()) {
-       // console.log(this.state);  
+       console.log(this.state);  
     }
   };
 
@@ -55,8 +56,14 @@ class Login extends Component {
                 <Row style={{ justifyContent: "right" }}>
                   <h1 style={{ fontStyle: "calibri" }}>Sign-In</h1>
                 </Row>
-                <Row style={{ justifyContent: "center" }}>
-                  <h3 style={{ fontWeight: "bold" }}>Username</h3>
+                <Row style={{justifyContent:'center'}}>
+                  {/* <h3 style={{ fontWeight: "bold"}}>Username</h3> */}
+                  <Title
+                    style={{ fontWeight: "bold", marginBottom: 0 }}
+                    level={5}
+                  >
+                    Username
+                  </Title>
                   <Input
                     prefix={
                       <UserOutlined style={{ color: "rgba(0,0,0,.25)" }} />
@@ -70,7 +77,13 @@ class Login extends Component {
                     }}
                     allowClear
                   />
-                  <h3 style={{ fontWeight: "bold" }}>Password</h3>
+                  {/* <h3 style={{ fontWeight: "bold" }}>Password</h3> */}
+                  <Title
+                    style={{ fontWeight: "bold", marginBottom: 0 }}
+                    level={5}
+                  >
+                    Password
+                  </Title>
                   <Input.Password
                     prefix={
                       <LockOutlined style={{ color: "rgba(0,0,0,.25)" }} />
