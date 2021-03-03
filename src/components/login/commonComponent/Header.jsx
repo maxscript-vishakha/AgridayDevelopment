@@ -29,8 +29,11 @@ const selectBefore = (
   </Select>
 );
 const onSearch = (value) => console.log(value);
-const onclick = () => console.log("clicked on cart");
+
 const Header = (props) => {
+  const onclick = () => {
+    props.history.push("/cart");
+  };
   return (
     <Layout>
       <header style={{ padding: 10, backgroundColor: "black" }}>

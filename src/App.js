@@ -6,6 +6,7 @@ import Home from './components/login/productList/Home'
 import ProductLIstScreen from './components/login/productList/ProductLIstScreen';
 import ProductDetails from './components/login/productDetails/ProductDetails'
 import Wishlist from './components/login/wishlist/Wishlist';
+import Cart from './components/login/cart/Cart';
 // import AgriImageGallery from './components/login/commonComponent/AgriImageGallery';
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Login} />
+          <Route path="/registration" component={Registration} />
+
           <Route
             path="/"
             render={() => {
@@ -22,16 +25,19 @@ function App() {
                 return (
                   <Switch>
                     <Route path="/home" component={Home} />
-                    <Route path="/registration" component={Registration} />
-                    <Route path="/productListScreen" component={ProductLIstScreen}/>
+                    <Route
+                      path="/productListScreen"
+                      component={ProductLIstScreen}
+                    />
                     <Route path="/productdetails" component={ProductDetails} />
-                    <Route path="/wishlist" component={Wishlist}/>
+                    <Route path="/wishlist" component={Wishlist} />
+                    <Route path="/cart" component={Cart} />
                   </Switch>
                 );
               }
             }}
           ></Route>
-          
+
           {/* <Route path="/agriimagegallery" component={AgriImageGallery} /> */}
         </Switch>
       </Router>
