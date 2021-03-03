@@ -43,12 +43,16 @@ class Wishlist extends Component {
           detailInfo:
             "TrustBasket Neem Cake Powder Organic Fertilizer and Pest Repellent for Plants (450 GMS)",
           price: "₹ 191",
+          originalPrice: "₹ 199.00",
+          discount: "  You save ₹ 8.00 (4%)",
         },
         {
           img: "https://m.media-amazon.com/images/I/51TcEhluPcL._AC_SY200_.jpg",
           detailInfo:
             "B Natural Organic Cold Pressed, Pure Neem Oil for Spray on Plants & Garden 200 ml Pouch With Free Measuring Cup",
           price: "₹ 209",
+          originalPrice: "₹ 350.00",
+          discount: "  You save ₹ 151.00 (43%)",
         },
       ],
     };
@@ -132,12 +136,9 @@ class Wishlist extends Component {
                     >
                       ACCOUNT SETTINGS
                     </h3>
-                    <h4 style={{ textAlign: "center" }}>Profile Information</h4>
-                    <h4 style={{ textAlign: "center" }}>Manage Addresses</h4>
-                    <h4 style={{ textAlign: "center" }}>
-                      PAN Card Information
-                    </h4>
-                    
+                    <h4 style={{ textAlign: "left" }}>Profile Information</h4>
+                    <h4 style={{ textAlign: "left" }}>Manage Addresses</h4>
+                    <h4 style={{ textAlign: "left" }}>PAN Card Information</h4>
                   </Col>
                 </Row>
               </Card>
@@ -160,16 +161,13 @@ class Wishlist extends Component {
                         />
                       </Col>
                       <Col xs={8}>
-                        <Title level={5}>
-                          TrustBasket Neem Cake Powder Organic Fertilizer and
-                          Pest Repellent for Plants (450 GMS)
-                        </Title>
-                        <h2 style={{ fontWeight: "bold" }}>₹ 191</h2>
+                        <Title level={5}>{product.detailInfo}</Title>
+                        <h2 style={{ fontWeight: "bold" }}>{product.price}</h2>
                         <h4>
                           <span>
-                            <strike> ₹ 199.00</strike>
+                            <strike> {product.originalPrice}</strike>
                             <a href="#" onClick={this.handleProductDetails}>
-                              You save ₹ 8.00 (4%)
+                              {product.discount}
                             </a>
                           </span>
                         </h4>

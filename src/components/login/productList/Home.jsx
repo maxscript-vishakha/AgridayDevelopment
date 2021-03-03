@@ -80,8 +80,8 @@ class Home extends Component {
            image4:
              "https://m.media-amazon.com/images/I/51qfKwFKrXL._AC_UL320_.jpg",
            productname1: "Neem Oil Spray",
-           productname2: "Gardern Care Kit Neem Extract Presticides",
-           productname3: "Neem Oil & Karanjia Oil Fungal Control spray",
+           productname2: "Gardern Care Kit",
+           productname3: "Fungal Control spray",
            productname4: "Agro Plus Presticides",
          },
        ],
@@ -132,50 +132,59 @@ class Home extends Component {
                     style={{ width: 355 }}
                   >
                     <Row>
-                      <Col xs={12}>
-                        <a href="#">
-                          <img
-                            onClick={this.handleProductDetailsClick}
-                            src={carddata.image1}
-                            alt="organic fertilizer"
-                            style={{ pading: 5, height: 120, width: 140 }}
-                          />
-                        </a>
-                        <h5>{carddata.productname1}</h5>
+                      <Col xs={12} style={{ minHeight: 165 }}>
+                        <img
+                          onClick={this.handleProductDetailsClick}
+                          src={carddata.image1}
+                          alt="organic fertilizer"
+                          style={{ pading: 5, height: 120, width: 140 }}
+                        />
+
+                        <h5 style={{ textOverflow: "ellipsis" }}>
+                          {carddata.productname1}
+                        </h5>
                       </Col>
                       <Col xs={12}>
-                        <a href="#">
-                          <img
-                            onClick={this.handleProductDetailsClick}
-                            src={carddata.image2}
-                            alt="organic fertilizer for rose plant"
-                            style={{ pading: 5, height: 120, width: 140 }}
-                          />
-                        </a>
-                        <h5>{carddata.productname2}</h5>
+                        <img
+                          onClick={this.handleProductDetailsClick}
+                          src={carddata.image2}
+                          alt="organic fertilizer for rose plant"
+                          style={{
+                            pading: 5,
+                            height: 120,
+                            width: 140,
+                            cursor: "pointer",
+                          }}
+                        />
+
+                        <h5 style={{ textOverflow: "ellipsis" }}>
+                          {carddata.productname2}
+                        </h5>
                       </Col>
 
                       <Col xs={12}>
-                        <a href="#">
-                          <img
-                            onClick={this.handleProductDetailsClick}
-                            src={carddata.image3}
-                            alt="liquid fertilizer"
-                            style={{ pading: 5, height: 120, width: 140 }}
-                          />
-                        </a>
-                        <h5>{carddata.productname3}</h5>
+                        <img
+                          onClick={this.handleProductDetailsClick}
+                          src={carddata.image3}
+                          alt="liquid fertilizer"
+                          style={{ pading: 5, height: 120, width: 140 }}
+                        />
+
+                        <h5 style={{ textOverflow: "ellipsis" }}>
+                          {carddata.productname3}
+                        </h5>
                       </Col>
                       <Col xs={12}>
-                        <a href="#">
-                          <img
-                            onClick={this.handleProductDetailsClick}
-                            src={carddata.image4}
-                            alt="neem cake powder fertilizer"
-                            style={{ pading: 5, height: 120, width: 140 }}
-                          />
-                        </a>
-                        <h5>{carddata.productname4}</h5>
+                        <img
+                          onClick={this.handleProductDetailsClick}
+                          src={carddata.image4}
+                          alt="neem cake powder fertilizer"
+                          style={{ pading: 5, height: 120, width: 140 }}
+                        />
+
+                        <h5 style={{ textOverflow: "ellipsis" }}>
+                          {carddata.productname4}
+                        </h5>
                       </Col>
                     </Row>
                     <a href="#">see more</a>
