@@ -145,8 +145,8 @@ const Header = (props) => {
               onClick={onclick}
             >
               <Badge
-                count={0}
-                showZero
+                count={2}
+                
                 style={{
                   color: "red",
                   backgroundColor: "white",
