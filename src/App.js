@@ -7,6 +7,9 @@ import ProductLIstScreen from './components/login/productList/ProductLIstScreen'
 import ProductDetails from './components/login/productDetails/ProductDetails'
 import Wishlist from './components/login/wishlist/Wishlist';
 import Cart from './components/login/cart/Cart';
+import SellerDashboard from './components/login/sellerDashboard/SellerDashboard';
+import YourOrder from './components/login/yourOrderScreen/YourOrder';
+import Checkout from './components/login/checkoutScreen/Checkout';
 // import AgriImageGallery from './components/login/commonComponent/AgriImageGallery';
 function App() {
   return (
@@ -25,13 +28,13 @@ function App() {
                 return (
                   <Switch>
                     <Route path="/home" component={Home} />
-                    <Route
-                      path="/productListScreen"
-                      component={ProductLIstScreen}
-                    />
+                    <Route path="/productListScreen" component={ProductLIstScreen}/>
                     <Route path="/productdetails" component={ProductDetails} />
                     <Route path="/wishlist" component={Wishlist} />
                     <Route path="/cart" component={Cart} />
+                    <Route path="/sellerdashboard" component={SellerDashboard}/>
+                    <Route path="/yourorder" component={YourOrder} />
+                    <Route path="/checkout" component={Checkout}/>
                   </Switch>
                 );
               }

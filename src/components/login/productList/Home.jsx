@@ -95,35 +95,35 @@ class Home extends Component {
         <Carousel autoplay style={{ height: "10%" }}>
           <div>
             <img
-              alt="Recharge"
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC/April20/Gateway/DesktopHero_HFC_1500x600_Recharge1._CB414105779_.jpg"
+              alt="carousal1"
+              src="https://cdn.ihsmarkit.com/www/blog/ra-wheat-field-against-blue-sky-65943406-post.jpg"
               style={{ height: 361, width: "100%" }}
             />
           </div>
           <div>
             <img
-              alt="Amazon prime"
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_1500x600._CB431281464_.jpg"
+              alt="carousal2"
+              src="https://cdn.ihsmarkit.com/www/blog/ra-planting-seeds-1419397073-post.jpg"
               style={{ height: 361, width: "100%" }}
             />
           </div>
           <div>
             <img
-              alt="Mobiles"
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/OPPO/FPFfeb/D21073588_OPPO_FPF_A31_FPF_FEB_DesktopTallHero_1500x600._CB658521896_.jpg"
+              alt="Carousal3"
+              src="https://cdn.ihsmarkit.com/www/blog/ra-human-hand-holding-soybean-field-107308046-post.jpg"
               style={{ height: 361, width: "100%" }}
             />
           </div>
           <div>
             <img
               alt="Acc fest"
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/unrec1499/Under1499_Gw_1500x600._CB661592357_.jpg"
+              src="https://cdn.ihsmarkit.com/www/blog/ra-spraying-pesticide-378322951-post.jpg"
               style={{ height: 361, width: "100%" }}
             />
           </div>
         </Carousel>
         <div>
-          <Row justify="space-between" style={{width : '100%'}}>
+          <Row justify="space-between" style={{ width: "100%" }}>
             {this.state.cardsTitle.map((carddata) => {
               return (
                 <Col xs={24} md={8}>
@@ -202,50 +202,50 @@ class Home extends Component {
         >
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/41OBf52bnOL.__AC_SY200_.jpg"
-              alt="mobiles"
+              src="https://m.media-amazon.com/images/I/51JXDktuGEL._AC_SY200_.jpg"
+              alt="fertilizer"
             />
           </div>
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/51M5gy5yXaL.__AC_SY200_.jpg"
-              alt="watches"
+              src="https://m.media-amazon.com/images/I/41v55GyndDL._AC_SY200_.jpg"
+              alt="black soil"
             />
           </div>
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/41OV9XtxCVL.__AC_SY200_.jpg"
-              alt="clothes"
-            />
-          </div>
-          <div>
-            <img
-              src="https://m.media-amazon.com/images/I/41A-ay1ftrL.__AC_SY200_.jpg"
-              alt="shoes"
-            />
-          </div>
-          <div>
-            <img
-              src="https://m.media-amazon.com/images/I/51dJzBptMIL.__AC_SY200_.jpg"
+              src="https://m.media-amazon.com/images/I/51BtWdrYhKL._AC_SY200_.jpg"
               alt="seeds"
             />
           </div>
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/41zn91YS7-L.__AC_SY200_.jpg"
-              alt="toy gun"
+              src="https://m.media-amazon.com/images/I/519a5NBHnfL._AC_SY200_.jpg"
+              alt="Red soil"
             />
           </div>
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/41rQI3+o3TL.__AC_SY200_.jpg"
-              alt="kids appear"
+              src="https://m.media-amazon.com/images/I/41ovOUoE2rL._AC_SY200_.jpg"
+              alt="Liquid Fertilizer"
             />
           </div>
           <div>
             <img
-              src="https://m.media-amazon.com/images/I/41SbmIl8AcL.__AC_SY200_.jpg"
-              alt="trimming and grooming"
+              src="https://m.media-amazon.com/images/I/51aRF2OcZLL._AC_SY200_.jpg"
+              alt="Compost Fertilizer"
+            />
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/51QbXOiCkiL._AC_SY200_.jpg"
+              alt="Neem Powder"
+            />
+          </div>
+          <div>
+            <img
+              src="https://m.media-amazon.com/images/I/51q0ih8HC2L._AC_SY200_.jpg"
+              alt="Organic Mix Soil"
             />
           </div>
         </ReactCarousel>

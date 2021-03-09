@@ -201,30 +201,47 @@ class Cart extends Component {
             }}
           >
             <Card title="PRICE DETAILS">
-              <Row justify="space-between" style={{padding:5}}>
-                <Col xs={18} style={{fontSize : 16}}>
+              <Row justify="space-between" style={{ padding: 5 }}>
+                <Col xs={18} style={{ fontSize: 16 }}>
                   Price ({this.state.cartProducts.length} items)
                 </Col>
-                <Col xs={6} style={{fontSize : 16}}>{"₹ " + this.calculateTotalOriginalPrice()}</Col>
-              </Row>
-              <Row justify="space-between" style={{padding:5}}>
-                <Col xs={18} style={{fontSize : 16}}>Discount</Col>
-                <Col xs={6} style={{fontSize : 16}}>
-                  {"₹ " +
-                    (this.calculateTotalOriginalPrice() - 
-                    this.calculateTotalPrice())}
+                <Col xs={6} style={{ fontSize: 16 }}>
+                  {"₹ " + this.calculateTotalOriginalPrice()}
                 </Col>
               </Row>
-              <Row justify="space-between" style={{padding:5}}>
-                <Col xs={18} style={{fontSize : 16}}>Shipping Charges</Col>
-                <Col xs={6} style={{fontSize : 16}}>{"FREE"}</Col>
+              <Row justify="space-between" style={{ padding: 5 }}>
+                <Col xs={18} style={{ fontSize: 16 }}>
+                  Discount
+                </Col>
+                <Col xs={6} style={{ fontSize: 16 }}>
+                  {"₹ " +
+                    (this.calculateTotalOriginalPrice() -
+                      this.calculateTotalPrice())}
+                </Col>
+              </Row>
+              <Row justify="space-between" style={{ padding: 5 }}>
+                <Col xs={18} style={{ fontSize: 16 }}>
+                  Shipping Charges
+                </Col>
+                <Col xs={6} style={{ fontSize: 16 }}>
+                  {"FREE"}
+                </Col>
               </Row>
               <Divider style={{ width: "100%" }} />
-              <Row justify="space-between" style={{padding:5}}>
-                <Col xs={18} style={{fontSize : 20, fontWeight : 700}}>Total Amount</Col>
-                <Col xs={6} style={{fontSize : 20, fontWeight: 700}}>{"₹ " + this.calculateTotalPrice()}</Col>
+              <Row justify="space-between" style={{ padding: 5 }}>
+                <Col xs={18} style={{ fontSize: 20, fontWeight: 700 }}>
+                  Total Amount
+                </Col>
+                <Col xs={6} style={{ fontSize: 20, fontWeight: 700 }}>
+                  {"₹ " + this.calculateTotalPrice()}
+                </Col>
               </Row>
             </Card>
+            <Row style={{paddingTop:"2%"}}>
+              <Button style={{fontSize:20, fontWeight:"bold", backgroundColor: "#33cc33", color: "white", width:"100%", height:40}}>
+                Place Order
+              </Button>
+            </Row>
           </Col>
         </Row>
       </>
