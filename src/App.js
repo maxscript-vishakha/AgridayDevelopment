@@ -10,6 +10,7 @@ import Cart from './components/login/cart/Cart';
 import SellerDashboard from './components/login/sellerDashboard/SellerDashboard';
 import YourOrder from './components/login/yourOrderScreen/YourOrder';
 import Checkout from './components/login/checkoutScreen/Checkout';
+import SellerInventory from './components/login/sellerInventory/SellerInventory';
 // import AgriImageGallery from './components/login/commonComponent/AgriImageGallery';
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
                     <Route path="/cart" component={Cart} />
                     <Route path="/sellerdashboard" component={SellerDashboard}/>
                     <Route path="/yourorder" component={YourOrder} />
-                    <Route path="/checkout" component={Checkout}/>
+                    <Route path="/checkout" component={Checkout} />
+                    <Route path="/sellerinventory" component={SellerInventory}/>
                   </Switch>
                 );
               }
