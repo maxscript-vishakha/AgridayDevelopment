@@ -657,15 +657,10 @@ class SellerDashboard extends Component {
             <Card title="Latest Orders">
               <Table columns={columns} dataSource={columnData} size="middle" />
               <Row justify="end">
-                {/* <Col xs={4}>
-                  <Button
-                    style={{ backgroundColor: "#33ccff", fontWeight: "bold" }}
-                  >
-                    Place New Order
-                  </Button>
-                </Col> */}
                 <Col xs={4}>
-                  <Button style={{ backgroundColor: "	 #bfbfbf", fontWeight:"bold"}}>
+                  <Button
+                    style={{ backgroundColor: "	 #bfbfbf", fontWeight: "bold" }}
+                  >
                     View All Orders
                   </Button>
                 </Col>
