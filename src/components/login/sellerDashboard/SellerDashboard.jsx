@@ -629,7 +629,7 @@ class SellerDashboard extends Component {
                       <Title
                         style={{ fontSize: 16, margin: "2%", color: "white" }}
                       >
-                        DIRECT MESSEGES
+                        DIRECT MESSAGES
                       </Title>
                       <p
                         style={{
